@@ -14,3 +14,7 @@ module.exports.funcionarioIndividual = (app, req, res) => {
         resultado ? res.render('funcionarioindividual', {funcionario: resultado}) : res.send(error)
     })
 }
+
+module.exports.funcionariosCadastro = (app, req, res) => {
+    res.render('cadastrofuncionarios')
+}
