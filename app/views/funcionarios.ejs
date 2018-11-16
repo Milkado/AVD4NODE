@@ -17,7 +17,7 @@
         </tr>
             <%funcionarios.forEach(funcionario => { %>
                <tr>
-                    <td><%=funcionario.nome %></td>
+                    <td><a href='/funcionarioindividual?id=<%=funcionario._id%>'><%=funcionario.nome %></a></td>
                     <td><%=funcionario.funcao %></td>
                     <td><%=funcionario.departamento %></td>
                     <td>Alterar</td>

@@ -17,6 +17,17 @@
             <th>Departamento</th>
             <th>Salário</th>
         </tr>
+
+    </tr>
+    <%funcionario.forEach(funcionario => { %>
+       <tr>
+            <td><%=funcionario.nome %></a></td>
+            <td><%=funcionario.funcao %></td>
+            <td><%=funcionario.cidade %></td>
+            <td><%=funcionario.departamento %></td>
+            <td><%=funcionario.salario %></td>
+        </tr>
+    <% }) %>
     </table>
 </body>
 </html>
