@@ -10,21 +10,21 @@
     <h1>Cadastro de Funcionários</h1>
     <br>
 
-    <form action="" method="post">
+    <form action="/funcionarios/salvar?id=<%=conteudo%>" method="post">
         <label>Nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Nome do funcionário" />
+        <input type="text" id="nome" name="nome" placeholder="Nome do funcionário" value='<%=dadosFuncionario[0].nome%>' />
         <br />
         <label>Função</label>
-        <input type="text" id="funcao" name="funcao" placeholder="Função do funcionário" />
+        <input type="text" id="funcao" name="funcao" placeholder="Função do funcionário" value='<%=dadosFuncionario[0].funcao%>'/>
         <br/>
         <label>Cidade</label>
-        <input type="text" id="cidade" name="cidade" placeholder="Cidade do funcionário" />
+        <input type="text" id="cidade" name="cidade" placeholder="Cidade do funcionário" value='<%=dadosFuncionario[0].cidade%>'/>
         <br />
         <label>Departamento</label>
-        <input type="text" id="departamento" name="departamento" placeholder="Departamento do funcionário" />
+        <input type="text" id="departamento" name="departamento" placeholder="Departamento do funcionário" value='<%=dadosFuncionario[0].departamento%>' />
         <br />
         <label>Salario</label>
-        <input type="number" id="salario" name="salario" placeholder="Salário do funcionário" />
+        <input type="number" id="salario" name="salario" placeholder="Salário do funcionário" value='<%=dadosFuncionario[0].salario%>'/>
         <br />
         <input type="submit" value="Enviar" />
     </form>

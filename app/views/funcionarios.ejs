@@ -20,8 +20,8 @@
                     <td><a href='/funcionarioindividual?id=<%=funcionario._id%>'><%=funcionario.nome %></a></td>
                     <td><%=funcionario.funcao %></td>
                     <td><%=funcionario.departamento %></td>
-                    <td>Alterar</td>
-                    <td>Exlcuir</td>
+                    <td><a href='/funcionarios/alterar?id=<%=funcionario._id%>'>Alterar</a></td>
+                    <td><a href='/funcionarios/excluir?id=<%=funcionario._id%>'>Exlcuir</a></td>
                 </tr>
             <% }) %>
     </table>
